@@ -1,3 +1,6 @@
 import Center from './Center';
+import Navigation from './Navigation';
 
-export default { Center };
+export { Center };
+export { Navigation };
+export default { Center, Navigation };
