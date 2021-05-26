@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'NanumSquareL';
+  src: url('assets/fonts/NanumSquareL.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'NanumSquareR';
+  src: url('assets/fonts/NanumSquareR.woff') format('woff');
+}

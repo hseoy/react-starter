@@ -1,17 +1,13 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import { ThemeProvider } from 'styled-components';
 import App from 'shared/App';
-import themes from 'style/themes';
-import GlobalStyle from 'style/globalStyle';
+import GlobalStyle from 'GlobalStyle';
 
 const Root = () => (
-  <ThemeProvider theme={themes}>
-    <BrowserRouter>
-      <GlobalStyle />
-      <App />
-    </BrowserRouter>
-  </ThemeProvider>
+  <BrowserRouter>
+    <GlobalStyle />
+    <App />
+  </BrowserRouter>
 );
 
 export default Root;

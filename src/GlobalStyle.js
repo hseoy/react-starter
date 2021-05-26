@@ -1,11 +1,13 @@
 import { createGlobalStyle } from 'styled-components';
-import { fontFace } from './utils';
-import NanumSquareL from '../assets/fonts/NanumSquareL.woff';
-import NanumSquareR from '../assets/fonts/NanumSquareR.woff';
+import 'assets/fonts/fonts.css';
 
-const globalStyle = createGlobalStyle`
-  ${fontFace('NanumSquareL', NanumSquareL, 'woff')}
-  ${fontFace('NanumSquareR', NanumSquareR, 'woff')}
+const GlobalStyle = createGlobalStyle`
+  #root {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    position: relative;
+  }
 
   :hover, :focus {
     outline: none;
@@ -14,6 +16,12 @@ const globalStyle = createGlobalStyle`
   html, body {
     width: 100%;
     height: 100%;
+  }
+
+  body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   body, h1, h2, h3, h4, h5, h6,
@@ -49,6 +57,10 @@ const globalStyle = createGlobalStyle`
   img, input, button {
     vertical-align: middle;
   }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  }
 `;
 
-export default globalStyle;
+export default GlobalStyle;
